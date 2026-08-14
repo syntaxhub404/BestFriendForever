@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Memory Vault • Private Entry</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="vault-page">
+<main class="vault-shell">
+  <section class="lock-card">
+    <div class="vault-mark"><span>MV</span></div>
+    <p class="eyebrow">PRIVATE MEMORY VAULT</p>
+    <h1>A little surprise is waiting.</h1>
+    <p class="sub">Enter the private password to open your collection of memories.</p>
+
+    <form class="password-form" id="passwordForm">
+      <label for="vaultPassword">Password</label>
+      <div class="password-wrap">
+        <input id="vaultPassword" type="password" inputmode="numeric" maxlength="4"
+               placeholder="Enter password" autocomplete="off" required>
+        <button type="button" id="togglePassword" class="eye-btn">Show</button>
+      </div>
+      <button class="unlock-btn" type="submit">ENTER THE VAULT</button>
+      <p class="error" id="errorMsg"></p>
+    </form>
+  </section>
+</main>
+<script src="js/app.js"></script>
+</body>
+</html>
